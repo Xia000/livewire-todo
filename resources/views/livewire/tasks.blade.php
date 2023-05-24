@@ -1,10 +1,14 @@
 <div>
 
+{{--    Show Error Messages--}}
+
     @if (session()->has('message'))
         <div class="alert alert-success">
             {{ session('message') }}
         </div>
     @endif
+
+{{--    Enable Disable Update Model--}}
 
     @if($updateMode)
         @include('livewire.update')
@@ -23,6 +27,8 @@
         </tr>
         </thead>
         <tbody>
+
+{{--        Display List of Tasks--}}
 
         @foreach($tasks as $task)
             <tr>

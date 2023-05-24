@@ -1,3 +1,5 @@
+{{--Update Component--}}
+
 <form>
     <input type="hidden" wire:model="post_id">
     <div class="form-group">

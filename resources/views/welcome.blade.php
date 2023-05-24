@@ -35,6 +35,7 @@
                                     {{ session('message') }}
                                 </div>
                             @endif
+                            {{--  Call the main Component    --}}
                             <livewire:tasks/>
                         </div>
                     </div>

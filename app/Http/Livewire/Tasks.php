@@ -24,6 +24,7 @@ class Tasks extends Component
         $this->description = '';
     }
 
+    // Store Tasks
     public function store()
     {
 
@@ -40,12 +41,14 @@ class Tasks extends Component
 
     }
 
+    // Cancel update mode
     public function cancel()
     {
         $this->updateMode = false;
         $this->inputFields();
     }
 
+    // get the task id
     public function edit($id)
     {
         $task = Task::findOrFail($id);
@@ -57,6 +60,7 @@ class Tasks extends Component
     }
 
 
+    // update task
     public function update()
     {
         $data = $this->validate([
@@ -76,6 +80,7 @@ class Tasks extends Component
         $this->inputFields();
     }
 
+    // mark completed or incompleted
     public function completed($id) {
         $task = Task::find($id);
 
@@ -96,6 +101,7 @@ class Tasks extends Component
 
     }
 
+    // delete the task
     public function delete($id)
     {
         Task::find($id)->delete();

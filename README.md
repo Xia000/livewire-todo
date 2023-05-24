@@ -1,5 +1,8 @@
 # Livewire TODO
 
+![Alt Text](screenshot.png)
+
+
 A simple TODO list app built with Laravel Livewire. The main objective of this project is to provide an example application for those who are starting with Laravel Livewire.
 
 - Create tasks.
